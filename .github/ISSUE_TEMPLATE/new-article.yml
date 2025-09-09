@@ -1,0 +1,47 @@
+---
+name: "📝 درخواست محتوای جدید"
+description: "ایجاد تسک برای تولید یک محتوای جدید"
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: "عنوان محتوا"
+      placeholder: "مثال: راهنمای جامع کنکور هنر ۱۴۰۵"
+    validations:
+      required: true
+
+  - type: input
+    id: branch-name
+    attributes:
+      label: "نام برنچ (انگلیسی)"
+      description: "برای ایجاد شاخه جدید از این نام استفاده میشه"
+      placeholder: "content/hub/example-topic"
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: "هدف و کلمات کلیدی"
+      description: "این محتوا به چه دردی میخوره و چه کلماتی رو سئو میکنه؟"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: "نوع محتوا"
+      options:
+        - هاب (Hub)
+        - پیلار (Pillar)
+        - کلاستر (Cluster)
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: "ددلاین"
+      placeholder: "مثال: 1403/12/15"
+---
