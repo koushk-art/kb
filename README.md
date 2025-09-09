@@ -1,61 +1,70 @@
-# Mantine Next.js + Nextra template
+# 🏰 Koushk Art Project
+![kart github banner](assets/kart-github-banner.svg)
 
+**Koushk Honar** is a comprehensive and specialized platform for Iranian university art entrance exam applicants and art students. Our goal is to provide deep, practical, and inspiring educational content to support the next generation of artists in Iran.
 
-<img width="1536" alt="image" src="https://github.com/user-attachments/assets/eac2e76d-0c63-4429-bb93-b75476e55216" />
+---
 
+## 💎 Our Vision, Mission, and Values
 
-This is a template for [Next.js](https://nextjs.org/) app router + [Mantine](https://mantine.dev/) + [Nextra](https://nextra.site/) documentation site.
+*   **Vision:** To become the most trusted and primary online reference for education, counseling, and guidance on the path to Iran's art universities.
+*   **Mission:** We simplify the complex journey of the art entrance exam for applicants by producing high-quality, standardized, and experience-based content, preparing them for entry into the professional art world.
+*   **Values:**
+    1.  **Authenticity & Quality:** A commitment to delivering accurate, in-depth, and practical content.
+    2.  **Community-Centric:** Building a dynamic community of students and mentors for knowledge exchange.
+    3.  **Innovation:** Leveraging the best tools and methods for online education.
 
-## Features
+---
 
-This template comes with the following features:
+## 🎯 Content Strategy
 
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Jest](https://jestjs.io/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
-- Provides API example in `/api/version`
+This project operates on the **Hub & Spoke** content model. Our strategy is based on the monthly publication of one **Hub content (a comprehensive pillar page)** and several **Cluster contents (supporting articles)**. Additionally, to maintain site dynamism, **three articles will be published weekly**.
 
-## Nextra Features
+- **Primary Goal:** To provide comprehensive guides (Pillar Content) and cover related topics fully (Cluster Content) to achieve top rankings in search engines.
+- **Feedback:** We continuously gather user feedback and use it to improve and expand our content.
 
-- [Nextra](https://nextra.site/) documentation site with Mantine theme
-- Sync Dark mode between documentation and application (Mantine/Nextra)
-- Customizable components in `components` folder
-- Provides new Navigation and Footer components for Nextra documentation site
+---
 
-## Folder structure
+## 🛠️ Tech Stack
 
-- `components` – shared components 
-    - you can use them in both documentation and application
-    - you may customize them to fit your needs
-- `content` – Nextra documentation site (.mdx and _meta.json files)
+This project is built using a modern web stack to deliver the best user experience and performance.
 
-## npm scripts
+- **Core Framework:** [**Next.js**](https://nextjs.org/) (App Router)
+- **Programming Language:** [**TypeScript**](https://www.typescriptlang.org/)
+- **UI Library:** [**Mantine**](https://mantine.dev/)
+- **Content Management:** **MDX** files within the Git repository
+- **Testing:** [**Jest**](https://jestjs.io/) & [**Testing Library**](https://testing-library.com/)
+- **Code Quality:** [**ESLint**](https://eslint.org/) & [**Prettier**](https://prettier.io/)
+- **Component Documentation:** [**Storybook**](https://storybook.js.org/)
+- **Package Manager:** [**Yarn Berry**](https://yarnpkg.com/)
+- **Deployment Platform:** [**Vercel**](https://vercel.com/)
 
-### Build and dev scripts
+---
 
-- `dev` – start dev server
-- `build` – bundle application for production
-- `analyze` – analyzes application bundle with [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+## 🚀 Getting Started
 
-### Testing scripts
+To set up this project locally, follow the steps below:
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `jest` – runs jest tests
-- `jest:watch` – starts jest watch
-- `test` – runs `jest`, `prettier:check`, `lint` and `typecheck` scripts
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/koushk-art/kb.git
+    cd kb
+    ```
 
-### Other scripts
+2.  **Install dependencies:**
+    ```bash
+    yarn install
+    ```
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+3.  **Run the development server:**
+    ```bash
+    yarn dev
+    ```
 
-<div align="center">
-  
-[![Star History Chart](https://api.star-history.com/svg?repos=gfazioli/next-app-nextra-template&type=Timeline)](https://www.star-history.com/#gfazioli/next-app-nextra-template&Timeline)
+You can now view the project at `http://localhost:3000`.
 
-</div>
+---
+
+## 🤝 Contributing
+
+We welcome contributions to this project! Please read our `CONTRIBUTING.md` file for more information.
