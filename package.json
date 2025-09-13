@@ -24,19 +24,24 @@
     "release:major": "yarn version major"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@gfazioli/mantine-marquee": "^2.5.5",
     "@gfazioli/mantine-text-animate": "^2.2.5",
-    "@mantine/core": "8.2.7",
-    "@mantine/hooks": "8.2.7",
+    "@mantine/core": "^8.3.1",
+    "@mantine/dates": "^8.3.1",
+    "@mantine/hooks": "^8.3.1",
+    "@mantine/styles": "^6.0.22",
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
     "@next/bundle-analyzer": "^15.5.2",
     "@tabler/icons-react": "^3.34.1",
-    "next": "15.5.2",
-    "nextra": "4.4.0",
+    "dayjs": "^1.11.18",
+    "next": "^15.5.3",
+    "nextra": "^4.4.0",
     "nextra-theme-docs": "4.4.0",
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "swr": "^2.3.6"
   },
   "devDependencies": {
@@ -72,7 +77,8 @@
     "stylelint-config-standard-scss": "^14.0.0",
     "ts-jest": "^29.4.1",
     "typescript": "5.9.2",
-    "typescript-eslint": "^8.41.0"
+    "typescript-eslint": "^8.41.0",
+    "webpack": "^5.101.3"
   },
   "packageManager": "yarn@4.9.4"
 }

@@ -24,3 +24,35 @@
 }
 
 @layer components, mantine, nextra, overwrite;
+
+/* راست‌چین کردن کل صفحه */
+html, body {
+  direction: rtl;
+  text-align: right; /* متن‌ها به سمت راست بروند */
+  font-family: 'Vazirmatn', sans-serif; /* فونت فارسی */
+  margin: 0;
+  padding: 0;
+}
+
+/* input, textarea و فرم‌ها */
+input, textarea, select {
+  direction: rtl;
+  text-align: right;
+}
+
+/* لیست‌ها راست‌چین */
+ul, ol {
+  padding-right: 1rem;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+/* برای لینک‌ها و دکمه‌ها */
+a, button {
+  text-align: right;
+}
+
+/* اگه scrollbars هم نیاز باشه */
+body {
+  scrollbar-gutter: stable both-edges;
+}
