@@ -1,6 +1,8 @@
 import '@gfazioli/mantine-marquee/styles.layer.css';
 import '@gfazioli/mantine-text-animate/styles.layer.css';
 import '@mantine/core/styles.layer.css';
+import './nextra-rtl.css';
+import './global.css';
 
 import { Layout } from 'nextra-theme-docs';
 import { Banner, Head } from 'nextra/components';
@@ -9,9 +11,7 @@ import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/c
 import { MantineFooter, MantineNavBar } from '@/components';
 import config from '@/config';
 import pack from '../package.json';
-import { theme } from '../theme';
-
-import './global.css';
+import { theme } from './theme';
 
 export const metadata = config.metadata;
 
@@ -20,7 +20,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const { nextraLayout, head } = config;
 
   return (
-    <html lang="en" dir="ltr" {...mantineHtmlProps}>
+    <html lang="fa" dir="rtl" {...mantineHtmlProps}>
       <Head>
         <ColorSchemeScript
           nonce={head.mantine.nonce}
@@ -33,7 +33,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         />
       </Head>
       <body>
-        <MantineProvider theme={theme} defaultColorScheme={head.mantine.defaultColorScheme}>
+        <MantineProvider theme={theme} defaultColorScheme={head.mantine.defaultColorScheme} />
           <Layout
             banner={
               <Banner storageKey={`release-notes-${pack.version}`}>
@@ -49,7 +49,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           >
             {children}
           </Layout>
-        </MantineProvider>
       </body>
     </html>
   );
