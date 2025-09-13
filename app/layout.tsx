@@ -1,3 +1,7 @@
+import config from '@/config';
+import pack from '../package.json';
+import theme from './theme';
+
 import '@gfazioli/mantine-marquee/styles.layer.css';
 import '@gfazioli/mantine-text-animate/styles.layer.css';
 import '@mantine/core/styles.layer.css';
@@ -7,9 +11,6 @@ import { Banner, Head } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { MantineFooter, MantineNavBar } from '@/components';
-import config from '@/config';
-import pack from '../package.json';
-import { theme } from '../theme';
 
 import './global.css';
 
