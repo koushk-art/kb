@@ -1,3 +1,4 @@
+// app/layout.tsx
 import config from '@/config';
 import pack from '../package.json';
 import theme from './theme';
@@ -5,14 +6,16 @@ import theme from './theme';
 import '@gfazioli/mantine-marquee/styles.layer.css';
 import '@gfazioli/mantine-text-animate/styles.layer.css';
 import '@mantine/core/styles.layer.css';
+import './global.css';
+import './nextra-rtl.css';
 
 import { Layout } from 'nextra-theme-docs';
 import { Banner, Head } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 import { MantineFooter, MantineNavBar } from '@/components';
-
-import './global.css';
+import { DatesProvider } from '@mantine/dates'; // Import DatesProvider for date localization
+import 'dayjs/locale/fa'; // Import Persian locale for dayjs
 
 export const metadata = config.metadata;
 
@@ -21,7 +24,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const { nextraLayout, head } = config;
 
   return (
-    <html lang="en" dir="ltr" {...mantineHtmlProps}>
+    <html lang="fa" dir="rtl" {...mantineHtmlProps}>
       <Head>
         <ColorSchemeScript
           nonce={head.mantine.nonce}
@@ -35,6 +38,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </Head>
       <body>
         <MantineProvider theme={theme} defaultColorScheme={head.mantine.defaultColorScheme}>
+          <DatesProvider settings={{ locale: 'fa', firstDayOfWeek: 6 }}>
+            {children}
+          </DatesProvider>
           <Layout
             banner={
               <Banner storageKey={`release-notes-${pack.version}`}>
