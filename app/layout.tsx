@@ -11,7 +11,7 @@ import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/c
 import { MantineFooter, MantineNavBar } from '@/components';
 import config from '@/config';
 import pack from '../package.json';
-import { theme } from './theme';
+import theme from './theme';
 
 export const metadata = config.metadata;
 
@@ -49,6 +49,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           >
             {children}
           </Layout>
+      </MantineProvider
       </body>
     </html>
   );
